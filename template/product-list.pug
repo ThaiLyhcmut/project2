@@ -1,0 +1,129 @@
+extends layouts/default.pug
+include mixins/item.pug
+
+block title 
+    title Danh sách sản phẩm
+
+block main
+    //- Breadcrumb
+    .breadcrumb 
+        .container 
+            ul.breadcrumb__list 
+                li.breadcrumb__item 
+                    a(href="/").breadcrumb__link Trang chủ
+                li.breadcrumb__item 
+                    a(href="/").breadcrumb__link Chó
+                li.breadcrumb__item 
+                    a(href="/").breadcrumb__link Chó nhỏ
+    //- End Breadcrumb
+
+
+
+    include partials/section-3.pug
+
+
+    //- Layout Product
+    .layout-product 
+        .container 
+            .layout-product__wrap 
+                .layout-product__left   
+                    .filters 
+                        .filters__title 
+                            img(src="assets/img/icon-filter.svg", alt="")
+                            span Bộ Lọc
+                        .filters__list 
+                            .filters__item 
+                                .filters__item-title Giống 
+                                .filters__item-box 
+                                    .filters__item-choose 
+                                        input(type="checkbox", name="giong" value="Đực" id="duc")
+                                        label(for="duc") Đực
+                                    .filters__item-choose 
+                                        input(type="checkbox", name="giong" value="Cái" id="cai")
+                                        label(for="cai") Cái
+                            .filters__item 
+                                .filters__item-title Màu sắc 
+                                .filters__item-box 
+                                    .filters__item-choose 
+                                        input(type="checkbox", name="ms" value="Xám" id="xam")
+                                        label(for="xam") Xám
+                                    .filters__item-choose 
+                                        input(type="checkbox", name="ms" value="Đen" id="den")
+                                        label(for="den") Đen
+                                    .filters__item-choose 
+                                        input(type="checkbox", name="ms" value="Trắng" id="trang")
+                                        label(for="trang") Trắng
+                            .filters__item 
+                                .filters__item-title Kích thước
+                                .filters__item-box 
+                                    .filters__item-choose 
+                                        input(type="checkbox", name="kt" value="Nhỏ" id="nho")
+                                        label(for="nho") Nhỏ
+                                    .filters__item-choose 
+                                        input(type="checkbox", name="kt" value="Vừa" id="vua")
+                                        label(for="vua") Vừa
+                                    .filters__item-choose 
+                                        input(type="checkbox", name="kt" value="Lớn" id="lon")
+                                        label(for="lon") Lớn
+
+                .layout-product__right
+                    .box-head
+                        span.text Chó nhỏ
+                        .box-head__filter
+                            img(src="assets/img/icon-filter.svg", alt="")
+                            span Bộ Lọc
+                    .section-2__wrap 
+                        .section-2__item.section-2__item--cover 
+                            .section-2__img 
+                                img(src="assets/img/pet_one.jpg", alt="")
+                            +content("MO231-Pomeranian Trắng","Cái","02 Tháng","6.500.000 VND") 
+                        .section-2__item.section-2__item--cover 
+                            .section-2__img 
+                                img(src="assets/img/pet_two.jpg", alt="")
+                            +content("MO502 - Poodle Tiny Vàng","Cái","02 Tháng","3.900.000 VND")
+                        .section-2__item.section-2__item--cover 
+                            .section-2__img 
+                                img(src="assets/img/pet_three.jpg", alt="")
+                            +content("MO102 - Poodle Tiny Sepia","Đực","02 Tháng","4.000.000 VND")
+                        .section-2__item.section-2__item--cover 
+                            .section-2__img 
+                                img(src="assets/img/pet_four.jpg", alt="")
+                            +content("MO512 - Alaskan Malamute","Đực","03 tháng","8.900.000 VND")
+                        .section-2__item.section-2__item--cover 
+                            .section-2__img 
+                                img(src="assets/img/pet_five.jpg", alt="")
+                            +content("MO231 - Pembroke Corgi","Đực","02 Tháng","7.900.000 VND")
+                        .section-2__item.section-2__item--cover 
+                            .section-2__img 
+                                img(src="assets/img/pet_six.jpg", alt="")
+                            +content("MO502 - Pembroke Corgi","Cái","02 Tháng","9.000.000 VND")
+                        .section-2__item.section-2__item--cover 
+                            .section-2__img 
+                                img(src="assets/img/pet_seven.jpg", alt="")
+                            +content("MO231 - Pomeranian Trắng","Cái","02 Tháng","6.500.000 VND")
+                        .section-2__item.section-2__item--cover 
+                            .section-2__img 
+                                img(src="assets/img/pet_eight.jpg", alt="")
+                            +content("MO512 - Poodle Tiny","Đực","02 Tháng","5.000.000 VND")
+                        .section-2__button-button 
+                            a.button(href="/")  Xem them <i class="fa-solid fa-angle-right"></i>
+                    .pagination 
+                        ul.pagination__list 
+                            li.pagination__item 
+                                a.pagination__link(href="/") <
+                            li.pagination__item 
+                                a.pagination__link.pagination__link--active(href="/") 1
+                            li.pagination__item 
+                                a.pagination__link(href="/") 2
+                            li.pagination__item 
+                                a.pagination__link(href="/") 3
+                            li.pagination__item 
+                                a.pagination__link(href="/") 4
+                            li.pagination__item 
+                                a.pagination__link(href="/") ...
+                            li.pagination__item 
+                                a.pagination__link(href="/") 28
+                            li.pagination__item 
+                                a.pagination__link(href="/") >
+
+    //- End Layout Product

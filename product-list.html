@@ -1,0 +1,311 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <title>Danh sách sản phẩm</title>
+  </head>
+  <body> 
+    <header class="header">
+      <div class="container"> 
+        <div class="header__wrap"> 
+          <button class="header__button-menu"><i class="fa-solid fa-bars"></i></button>
+          <div class="header__logo"> <a href="/"><img src="assets/img/logo.svg" alt="Monito"/></a></div>
+          <nav class="header__menu"> 
+            <ul> 
+              <li><a href="/">Trang Chủ  </a></li>
+              <li><a href="/">Danh Mục  </a></li>
+              <li><a href="/">Giới Thiệu  </a></li>
+              <li><a href="/">Liên Hệ  </a></li>
+            </ul>
+          </nav>
+          <div class="header__search"> 
+            <form>
+              <button> <i class="fa-solid fa-magnifying-glass"></i></button>
+              <input type="text" placeholder="Nhập từ khóa ...."/>
+            </form>
+          </div><a class="button button--primiry" href="/">Tham gia cộng đồng </a>
+          <button class="header__button-search"> <i class="fa-solid fa-magnifying-glass"> </i></button>
+        </div>
+      </div>
+    </header>
+    <div class="breadcrumb"> 
+      <div class="container"> 
+        <ul class="breadcrumb__list"> 
+          <li class="breadcrumb__item"> <a class="breadcrumb__link" href="/">Trang chủ</a></li>
+          <li class="breadcrumb__item"> <a class="breadcrumb__link" href="/">Chó</a></li>
+          <li class="breadcrumb__item"> <a class="breadcrumb__link" href="/">Chó nhỏ</a></li>
+        </ul>
+      </div>
+    </div>
+    <section class="section-3"> 
+      <div class="container">
+        <div class="section-3__wrap"> 
+          <div class="section-3__img">
+             <img src="assets/img/section-3.img.png" alt=""></div>
+          <div class="section-3__content"> 
+            <h2 class="section-3__title">Thêm Một Bạn</h2>
+            <h3 class="section-3__sub-title">Thêm Ngàn Niềm Vui!</h3>
+            <div class="section-3__desc">Có một con thú cưng đồng nghĩa với việc bạn có thêm niềm vui mới. Chúng tôi có hơn 200 con thú cưng khác nhau có thể đáp ứng nhu cầu của bạn!</div>
+            <div class="section-3__sub"> <a class="button" href="">Giới Thiệu <i class="fa-regular fa-circle-play"></i></a><a class="button button--primiry">Khám Phá Ngay</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="layout-product"> 
+      <div class="container"> 
+        <div class="layout-product__wrap"> 
+          <div class="layout-product__left">  
+            <div class="filters"> 
+              <div class="filters__title"> <img src="assets/img/icon-filter.svg" alt=""/><span>Bộ Lọc</span></div>
+              <div class="filters__list"> 
+                <div class="filters__item"> 
+                  <div class="filters__item-title">Giống </div>
+                  <div class="filters__item-box"> 
+                    <div class="filters__item-choose"> 
+                      <input type="checkbox" name="giong" value="Đực" id="duc"/>
+                      <label for="duc">Đực</label>
+                    </div>
+                    <div class="filters__item-choose"> 
+                      <input type="checkbox" name="giong" value="Cái" id="cai"/>
+                      <label for="cai">Cái</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="filters__item"> 
+                  <div class="filters__item-title">Màu sắc </div>
+                  <div class="filters__item-box"> 
+                    <div class="filters__item-choose"> 
+                      <input type="checkbox" name="ms" value="Xám" id="xam"/>
+                      <label for="xam">Xám</label>
+                    </div>
+                    <div class="filters__item-choose"> 
+                      <input type="checkbox" name="ms" value="Đen" id="den"/>
+                      <label for="den">Đen</label>
+                    </div>
+                    <div class="filters__item-choose"> 
+                      <input type="checkbox" name="ms" value="Trắng" id="trang"/>
+                      <label for="trang">Trắng</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="filters__item"> 
+                  <div class="filters__item-title">Kích thước</div>
+                  <div class="filters__item-box"> 
+                    <div class="filters__item-choose"> 
+                      <input type="checkbox" name="kt" value="Nhỏ" id="nho"/>
+                      <label for="nho">Nhỏ</label>
+                    </div>
+                    <div class="filters__item-choose"> 
+                      <input type="checkbox" name="kt" value="Vừa" id="vua"/>
+                      <label for="vua">Vừa</label>
+                    </div>
+                    <div class="filters__item-choose"> 
+                      <input type="checkbox" name="kt" value="Lớn" id="lon"/>
+                      <label for="lon">Lớn</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layout-product__right">
+            <div class="box-head"><span class="text">Chó nhỏ</span>
+              <div class="box-head__filter"><img src="assets/img/icon-filter.svg" alt=""/><span>Bộ Lọc</span></div>
+            </div>
+            <div class="section-2__wrap"> 
+              <div class="section-2__item section-2__item--cover"> 
+                <div class="section-2__img"> <img src="assets/img/pet_one.jpg" alt=""/></div>
+                <div class="section-2__content"> 
+                  <h3 class="section-2__title"> <a href="/">MO231-Pomeranian Trắng</a></h3>
+                  <div class="section-2__info">
+                    <div class="section-2__info-item"> 
+                      <p>Giống: <span>Cái</span></p>
+                    </div>
+                    <div class="section-2__info-item"> 
+                      <p>Tuổi: <span>02 Tháng</span></p>
+                    </div>
+                    <div class="section-2__price"> 
+                      <p>6.500.000 VND</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-2__item section-2__item--cover"> 
+                <div class="section-2__img"> <img src="assets/img/pet_two.jpg" alt=""/></div>
+                <div class="section-2__content"> 
+                  <h3 class="section-2__title"> <a href="/">MO502 - Poodle Tiny Vàng</a></h3>
+                  <div class="section-2__info">
+                    <div class="section-2__info-item"> 
+                      <p>Giống: <span>Cái</span></p>
+                    </div>
+                    <div class="section-2__info-item"> 
+                      <p>Tuổi: <span>02 Tháng</span></p>
+                    </div>
+                    <div class="section-2__price"> 
+                      <p>3.900.000 VND</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-2__item section-2__item--cover"> 
+                <div class="section-2__img"> <img src="assets/img/pet_three.jpg" alt=""/></div>
+                <div class="section-2__content"> 
+                  <h3 class="section-2__title"> <a href="/">MO102 - Poodle Tiny Sepia</a></h3>
+                  <div class="section-2__info">
+                    <div class="section-2__info-item"> 
+                      <p>Giống: <span>Đực</span></p>
+                    </div>
+                    <div class="section-2__info-item"> 
+                      <p>Tuổi: <span>02 Tháng</span></p>
+                    </div>
+                    <div class="section-2__price"> 
+                      <p>4.000.000 VND</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-2__item section-2__item--cover"> 
+                <div class="section-2__img"> <img src="assets/img/pet_four.jpg" alt=""/></div>
+                <div class="section-2__content"> 
+                  <h3 class="section-2__title"> <a href="/">MO512 - Alaskan Malamute</a></h3>
+                  <div class="section-2__info">
+                    <div class="section-2__info-item"> 
+                      <p>Giống: <span>Đực</span></p>
+                    </div>
+                    <div class="section-2__info-item"> 
+                      <p>Tuổi: <span>03 tháng</span></p>
+                    </div>
+                    <div class="section-2__price"> 
+                      <p>8.900.000 VND</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-2__item section-2__item--cover"> 
+                <div class="section-2__img"> <img src="assets/img/pet_five.jpg" alt=""/></div>
+                <div class="section-2__content"> 
+                  <h3 class="section-2__title"> <a href="/">MO231 - Pembroke Corgi</a></h3>
+                  <div class="section-2__info">
+                    <div class="section-2__info-item"> 
+                      <p>Giống: <span>Đực</span></p>
+                    </div>
+                    <div class="section-2__info-item"> 
+                      <p>Tuổi: <span>02 Tháng</span></p>
+                    </div>
+                    <div class="section-2__price"> 
+                      <p>7.900.000 VND</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-2__item section-2__item--cover"> 
+                <div class="section-2__img"> <img src="assets/img/pet_six.jpg" alt=""/></div>
+                <div class="section-2__content"> 
+                  <h3 class="section-2__title"> <a href="/">MO502 - Pembroke Corgi</a></h3>
+                  <div class="section-2__info">
+                    <div class="section-2__info-item"> 
+                      <p>Giống: <span>Cái</span></p>
+                    </div>
+                    <div class="section-2__info-item"> 
+                      <p>Tuổi: <span>02 Tháng</span></p>
+                    </div>
+                    <div class="section-2__price"> 
+                      <p>9.000.000 VND</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-2__item section-2__item--cover"> 
+                <div class="section-2__img"> <img src="assets/img/pet_seven.jpg" alt=""/></div>
+                <div class="section-2__content"> 
+                  <h3 class="section-2__title"> <a href="/">MO231 - Pomeranian Trắng</a></h3>
+                  <div class="section-2__info">
+                    <div class="section-2__info-item"> 
+                      <p>Giống: <span>Cái</span></p>
+                    </div>
+                    <div class="section-2__info-item"> 
+                      <p>Tuổi: <span>02 Tháng</span></p>
+                    </div>
+                    <div class="section-2__price"> 
+                      <p>6.500.000 VND</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-2__item section-2__item--cover"> 
+                <div class="section-2__img"> <img src="assets/img/pet_eight.jpg" alt=""/></div>
+                <div class="section-2__content"> 
+                  <h3 class="section-2__title"> <a href="/">MO512 - Poodle Tiny</a></h3>
+                  <div class="section-2__info">
+                    <div class="section-2__info-item"> 
+                      <p>Giống: <span>Đực</span></p>
+                    </div>
+                    <div class="section-2__info-item"> 
+                      <p>Tuổi: <span>02 Tháng</span></p>
+                    </div>
+                    <div class="section-2__price"> 
+                      <p>5.000.000 VND</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-2__button-button"> <a class="button" href="/"> Xem them <i class="fa-solid fa-angle-right"></i></a></div>
+            </div>
+            <div class="pagination"> 
+              <ul class="pagination__list"> 
+                <li class="pagination__item"> <a class="pagination__link" href="/"><</a></li>
+                <li class="pagination__item"> <a class="pagination__link pagination__link--active" href="/">1</a></li>
+                <li class="pagination__item"> <a class="pagination__link" href="/">2</a></li>
+                <li class="pagination__item"> <a class="pagination__link" href="/">3</a></li>
+                <li class="pagination__item"> <a class="pagination__link" href="/">4</a></li>
+                <li class="pagination__item"> <a class="pagination__link" href="/">...</a></li>
+                <li class="pagination__item"> <a class="pagination__link" href="/">28</a></li>
+                <li class="pagination__item"> <a class="pagination__link" href="/">></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"> 
+      <div class="container"> 
+        <div class="footer__top"> 
+          <h3 class="footer__title">Đăng ký ngay để không bỏ lỡ các chương trình của chúng tôi</h3>
+          <form class="footer__form" action=""> 
+            <input type="email" placeholder="Nhập email của bạn ..."/>
+            <button type="submit">Đăng Ký Ngây </button>
+          </form>
+        </div>
+        <div class="footer__middle">  
+          <nav class="footer__menu">
+            <ul> 
+              <li><a href="/">Trang Chủ</a></li>
+              <li><a href="/">Danh Mục</a></li>
+              <li><a href="/">Giới Thiệu</a></li>
+              <li><a href="/">Liên Hệ</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__socials"> 
+            <ul>
+              <li><a href="/" target="_blank"><i class="fa-brands fa-facebook"> </i></a></li>
+              <li><a href="/" target="_blank"><i class="fa-brands fa-x-twitter"> </i></a></li>
+              <li><a href="/" target="_blank"><i class="fa-brands fa-instagram"> </i></a></li>
+              <li><a href="/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__bottom"> 
+          <div class="footer__copyright">© 2023 Ly Vinh Thai. All rights reserved.</div>
+          <div class="footer__logo"><a href="/"><img src="assets/img/Group.png" alt=""/></a></div>
+          <nav class="footer__links"> 
+            <ul>
+              <li><a href="/"> Điều khoản dịch vụ</a></li>
+              <li><a href="/"> Chính sách bảo mật</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

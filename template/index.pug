@@ -1,0 +1,122 @@
+extends layouts/default.pug
+
+block title 
+    title Trang chu 
+block main
+    //- Begin section-1
+    section.section-1 
+        .container 
+            .section-1__wrap 
+                .section-1__bg-head 
+                .section-1__content 
+                    img.section-1__bg-1(src="assets/img/section1-bg1.svg", alt="")
+                    h1.section-1__title Thêm Một Bạn
+                    h2.section-1__sup-title Thêm Ngàn Niềm Vui!
+                    .section-1__desc Có một con thú cưng đồng nghĩa với việc bạn có thêm niềm vui mới. Chúng tôi có hơn 200 con thú cưng khác nhau có thể đáp ứng nhu cầu của bạn!
+                    .section-1__sub
+                        a.button.section-1__button(href="/") Giới Thiệu <i class="fa-regular fa-circle-play"></i>
+                        a.button.button--primiry Khám Phá Ngay
+                    img.section-1__bg-2(src="assets/img/section1-bg2.svg", alt="")
+                .section-1__img 
+                    img.section-1__thumb(src="assets/img/img_1.png", alt="")
+                    img.section-1__bg-3(src="assets/img/section1-bg3.svg", alt="")
+    //-End section-1
+
+
+
+
+
+    //-Begin section-2
+    section.section-2 
+        .container 
+            .box-head 
+                .box-head__left
+                    .box-head__sub-title Có gì mới?
+                    .box-head__title một số vật nuôi của chúng tôi
+                .box-head__right 
+                    a.button(href="/")  Xem them <i class="fa-solid fa-angle-right"></i>
+            .section-2__wrap 
+                .section-2__item 
+                    .section-2__img 
+                        img(src="assets/img/pet_one.jpg", alt="")
+                    +content("MO231-Pomeranian Trắng","Cái","02 Tháng","6.500.000 VND") 
+                .section-2__item 
+                    .section-2__img 
+                        img(src="assets/img/pet_two.jpg", alt="")
+                    +content("MO502 - Poodle Tiny Vàng","Cái","02 Tháng","3.900.000 VND")
+                .section-2__item 
+                    .section-2__img 
+                        img(src="assets/img/pet_three.jpg", alt="")
+                    +content("MO102 - Poodle Tiny Sepia","Đực","02 Tháng","4.000.000 VND")
+                .section-2__item 
+                    .section-2__img 
+                        img(src="assets/img/pet_four.jpg", alt="")
+                    +content("MO512 - Alaskan Malamute","Đực","03 tháng","8.900.000 VND")
+                .section-2__item 
+                    .section-2__img 
+                        img(src="assets/img/pet_five.jpg", alt="")
+                    +content("MO231 - Pembroke Corgi","Đực","02 Tháng","7.900.000 VND")
+                .section-2__item 
+                    .section-2__img 
+                        img(src="assets/img/pet_six.jpg", alt="")
+                    +content("MO502 - Pembroke Corgi","Cái","02 Tháng","9.000.000 VND")
+                .section-2__item 
+                    .section-2__img 
+                        img(src="assets/img/pet_seven.jpg", alt="")
+                    +content("MO231 - Pomeranian Trắng","Cái","02 Tháng","6.500.000 VND")
+                .section-2__item 
+                    .section-2__img 
+                        img(src="assets/img/pet_eight.jpg", alt="")
+                    +content("MO512 - Poodle Tiny","Đực","02 Tháng","5.000.000 VND")
+                .section-2__button-button 
+                    a.button(href="/")  Xem them <i class="fa-solid fa-angle-right"></i>
+    //-End section-2
+
+    //-Begin section-3
+    include partials/section-3.pug
+    //-End section-3
+    section.section-4
+        .container
+            .box-head
+                .box-head__left
+                    .box-head__sub-title Có thể bạn đã biết?
+                    h2.box-head__title Kiến thức thú cưng hữu ích
+                .box-head__right
+                    a(href="#" class="button") Xem thêm <i class="fa-solid fa-angle-right"></i>
+
+            -
+                var blogs = [
+                {
+                    image: 'assets/img/post-1.jpg',
+                    tag: 'Kiến thức thú cưng',
+                    title: 'Pomeranian là gì? Cách nhận biết chó Pomeranian',
+                    desc: 'Pomeranian hay còn gọi là chó Pomeranian (chó Pom) luôn nằm trong top những thú cưng dễ thương nhất. Không chỉ vậy, giống chó xiếc nhỏ nhắn, đáng yêu, thông minh, thân thiện và khéo léo.'
+                },
+                {
+                    image: 'assets/img/post-2.jpg',
+                    tag: 'Kiến thức thú cưng',
+                    title: 'Chế độ ăn cho chó bạn cần biết',
+                    desc: 'Việc chia khẩu phần ăn cho chó thoạt nghe có vẻ đơn giản nhưng có một số quy tắc bạn nên biết để chó cưng dễ dàng hấp thụ các chất dinh dưỡng trong khẩu phần ăn. Dành cho những người mới bắt đầu nuôi chó, đặc biệt là chó con mới sinh có sức đề kháng tương đối yếu.'
+                },
+                {
+                    image: 'assets/img/post-3.jpg',
+                    tag: 'Kiến thức thú cưng',
+                    title: 'Tại sao chó cắn phá đồ đạc và cách phòng ngừa hiệu quả',
+                    desc: 'Chó cắn là hiện tượng phổ biến trong quá trình phát triển. Tuy nhiên, không ai muốn thấy đồ đạc, vật dụng quan trọng của mình bị chó cắn.'
+                }
+                ];
+            
+            .section-4__wrap
+                each blog in blogs
+                    .section-4__item
+                        .section-4__image
+                            a(href="#")
+                                img(src=blog.image)
+                        .section-4__content
+                            .section-4__tag #{blog.tag}
+                            h3.section-4__title
+                            a(href="#") #{blog.title}
+                            .section-4__desc #{blog.desc}
+            .section-4__button-bottom
+                a(href="#" class="button") Xem thêm <i class="fa-solid fa-angle-right"></i>
+    //- End Section 4

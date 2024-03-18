@@ -1,0 +1,89 @@
+doctype html 
+html 
+    head 
+        link(rel="stylesheet", href="assets/css/style.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css")
+        block title
+    body 
+        //- Begin header
+
+        -
+            var meNu = [
+                "Trang Chủ",
+                "Danh Mục",
+                "Giới Thiệu",
+                "Liên Hệ"
+            ]
+
+
+        header.header
+            .container 
+                .header__wrap 
+                    button.header__button-menu
+                        i.fa-solid.fa-bars
+                    .header__logo 
+                        a(href="/")
+                            img(src="assets/img/logo.svg", alt="Monito")
+                    nav.header__menu 
+                        ul 
+                            each name in meNu 
+                                li
+                                    a(href="/") #{name}  
+                    .header__search 
+                        form
+                            button 
+                                i.fa-solid.fa-magnifying-glass
+                            input(type="text" placeholder = "Nhập từ khóa ....")
+                    a.button.button--primiry(href="/") Tham gia cộng đồng 
+                    button.header__button-search 
+                        i.fa-solid.fa-magnifying-glass 
+                    
+
+    
+        //- End header
+
+        block main
+
+        //- Begin footer
+        footer.footer 
+            .container 
+                .footer__top 
+                    h3.footer__title Đăng ký ngay để không bỏ lỡ các chương trình của chúng tôi
+                    form.footer__form(action="") 
+                        input(type="email" placeholder="Nhập email của bạn ...")
+                        button(type="submit") Đăng Ký Ngây 
+                .footer__middle   
+                    nav.footer__menu
+                        ul 
+                            each name in meNu 
+                                li
+                                    a(href="/") #{name}
+                    nav.footer__socials 
+                        ul
+                            li
+                                a(href="/", target="_blank")
+                                    i.fa-brands.fa-facebook 
+                            li
+                                a(href="/", target="_blank")
+                                    i.fa-brands.fa-x-twitter 
+                            li
+                                a(href="/", target="_blank")
+                                    i.fa-brands.fa-instagram 
+                            li
+                                a(href="/", target="_blank")
+                                    i.fa-brands.fa-youtube
+                .footer__bottom 
+                    .footer__copyright © 2023 Ly Vinh Thai. All rights reserved.
+                    .footer__logo
+                        a(href="/")
+                            img(src="assets/img/Group.png", alt="")
+                    nav.footer__links 
+                        ul
+                            li
+                                a(href="/")  Điều khoản dịch vụ
+                            li
+                                a(href="/")  Chính sách bảo mật
+                                
+                                
+
+        //- End footer

@@ -1,0 +1,11 @@
+mixin content(img_name,img_sex,img_age,img_price)
+    .section-2__content 
+        h3.section-2__title 
+            a(href="/") #{img_name}
+        .section-2__info
+            .section-2__info-item 
+                p Giống: <span>#{img_sex}</span>
+            .section-2__info-item 
+                p Tuổi: <span>#{img_age}</span>
+            .section-2__price 
+                p #{img_price}
